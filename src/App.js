@@ -36,10 +36,10 @@ class App extends Component {
 
         var v = event.target.value;
         v = v.trim().replace(/\D/g,'');
-        //TODO determine value that crosses maxint
-        if (v > 300) {
-            v = 300
-            this.setState({errorMsg: "Upper limit is 300"})
+        //TODO dynamically determine value that crosses maxint
+        if (v > 91) {
+            v = 91
+            this.setState({errorMsg: "Upper limit is 91"})
         } else {
             this.setState({errorMsg: " "})
         }
